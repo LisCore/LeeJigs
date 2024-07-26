@@ -7,6 +7,8 @@
 body,
 html {
     overflow-x: hidden;
+    height: 100%;
+    margin: 0;
 }
 
 
@@ -376,6 +378,33 @@ form>h3 {
     gap: 1rem;
 }
 
-/* .a-category {
-    padding:
+/* .item-wrapper {
+    margin-left: 16rem;
 } */
+
+.item-container {
+    margin-left: 16rem;
+}
+
+.item-detail {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.add-cart {
+    font-size: larger;
+    margin-left: 13rem;
+    background-color: #5A72A0;
+    border-radius: 5px;
+}
+
+.add-cart:hover {
+    cursor: pointer;
+}
