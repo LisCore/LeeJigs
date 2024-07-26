@@ -340,3 +340,42 @@ form>h3 {
     align-items: center;
     justify-content: center;
 }
+
+#about-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+.about {
+    text-align: start;
+    width: 90%;
+    opacity: .85;
+}
+
+.about-container {
+    background-color: #1A2130;
+    width: 40%;
+    border-radius: 10px;
+    margin: 1.3rem;
+    padding: 1rem;
+    color: #fdfdfd;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 1px 1px #83B4FF;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    position: fixed;
+    margin: 3rem;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+/* .a-category {
+    padding:
+} */
