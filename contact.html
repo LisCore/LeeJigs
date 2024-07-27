@@ -15,40 +15,63 @@
 </head>
 
 <body>
-    <div id="navbar">
-        <div class="nav-logo">
-            <a href="./index.html"><img src="./photos/salmon.png" alt="Logo" class="logo-fish"></a>
-            <!-- https://www.flaticon.com/free-icon/salmon_235432?related_id=311596&origin=search -->
-            <h1><a href="./index.html" class="hover-effect">LeeJigs</a></h1>
+    <main>
+        <div id="navbar">
+            <div class="nav-logo">
+                <a href="./index.html"><img src="./photos/salmon.png" alt="Logo" class="logo-fish"></a>
+                <!-- https://www.flaticon.com/free-icon/salmon_235432?related_id=311596&origin=search -->
+                <h1><a href="./index.html" class="hover-effect">LeeJigs</a></h1>
+            </div>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776; <!-- Hamburger icon -->
+                </div>
+                <ul class="nav-abs">
+                    <li><a href="./index.html" class="hover-effect">Home</a></li>
+                    <li><a href="./about.html" class="hover-effect">About</a></li>
+                    <li><a href="./shop.html" class="hover-effect">Shop</a></li>
+                    <li><a href="./contact.html" class="hover-effect">Contact</a></li>
+                    <li><a href="#"><img src="./photos/icons8-search-96.png" alt="Search" class="search-img"></a></li>
+                    <!-- https://www.flaticon.com/free-icon/magnifier_64673?term=search&page=1&position=13&origin=search&related_id=64673 -->
+                    <!-- https://www.flaticon.com/free-icon/shopping-cart_3144456?term=cart&page=1&position=2&origin=search&related_id=3144456 -->
+                    <li><a href="./cart.html"><img src="./photos/icons8-cart-96.png" alt="Cart" class="cart-img"></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav-abs">
-                <li><a href="./index.html" class="hover-effect">Home</a></li>
-                <li><a href="./about.html" class="hover-effect">About</a></li>
-                <li><a href="./shop.html" class="hover-effect">Shop</a></li>
-                <li><a href="./contact.html" class="hover-effect">Contact</a></li>
-                <li><a href="#"><img src="./photos/icons8-search-96.png" alt="Search" class="search-img"></a></li>
-                <!-- https://www.flaticon.com/free-icon/magnifier_64673?term=search&page=1&position=13&origin=search&related_id=64673 -->
-                <!-- https://www.flaticon.com/free-icon/shopping-cart_3144456?term=cart&page=1&position=2&origin=search&related_id=3144456 -->
-                <li><a href="./cart.html"><img src="./photos/icons8-cart-96.png" alt="Cart" class="cart-img"></a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="footer">
-        <!-- https://www.flaticon.com/free-icon/instagram_1384015 -->
-        <!-- https://www.flaticon.com/free-icon/twitter_5969020 -->
-        <!-- https://www.flaticon.com/free-icon/facebook_4494464 -->
-        <div class="icons-footer">
-            <a href="https://www.facebook.com"><img src="./photos/social-icons/facebook (2).png" alt="facebook"
-                    class="social"></a>
-            <a href="https://www.instagram.com"><img src="./photos/social-icons/instagram (2).png" alt="instagram"
-                    class="social"></a>
-            <a href="https://x.com"><img src="./photos/social-icons/twitter.png" alt="twitter or X" class="social"></a>
+
+        <div id="holder">
+            <p>test</p>
         </div>
-        <div class="copyright">
-            <p>Copyright © 2024 LeeJigs - All Rights Reserved.</p>
+
+        <div id="footer">
+            <!-- https://www.flaticon.com/free-icon/instagram_1384015 -->
+            <!-- https://www.flaticon.com/free-icon/twitter_5969020 -->
+            <!-- https://www.flaticon.com/free-icon/facebook_4494464 -->
+            <div class="icons-footer">
+                <a href="https://www.facebook.com"><img src="./photos/social-icons/facebook (2).png" alt="facebook"
+                        class="social"></a>
+                <a href="https://www.instagram.com"><img src="./photos/social-icons/instagram (2).png" alt="instagram"
+                        class="social"></a>
+                <a href="https://x.com"><img src="./photos/social-icons/twitter.png" alt="twitter or X"
+                        class="social"></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 LeeJigs - All Rights Reserved.</p>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        if (navLinks.style.display === 'flex') {
+            navLinks.style.display = 'none';
+        } else {
+            navLinks.style.display = 'flex';
+        }
+    }
+</script>
 
 </html>
