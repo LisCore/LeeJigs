@@ -249,8 +249,9 @@ form>h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .about {
@@ -323,6 +324,19 @@ form>h3 {
     cursor: pointer;
 }
 
+
+
+/* MEDIA GROUP */
+@media (max-width: 1500px) {
+    #email-news {
+        width: 50vw;
+    }
+
+    #sign-up-btn {
+        width: 10vw;
+    }
+}
+
 @media (max-width: 900px) {
     .nav-abs {
         display: none;
@@ -375,20 +389,6 @@ form>h3 {
         margin-bottom: .5rem;
     }
 
-    /*
-    .logo-fish {
-        padding: 0;
-    }
-
-    h1 {
-        font-size: 1rem;
-    }
-
-    h1>a {
-        margin: auto;
-        display: none;
-    } */
-
     .logo-fish {
         width: 2.5rem;
     }
@@ -399,10 +399,96 @@ form>h3 {
 
     .nav-logo {
         width: 50%;
-        /* margin-right: 3rem; */
         display: flex;
         align-items: start;
         justify-content: start;
     }
 
+    /* #photo-catalog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .img-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .img-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    #footer {
+        /* padding-bottom: 50px; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .copyright {
+        padding-bottom: 2px;
+    }
+}
+
+@media (max-width: 450px) {
+    .img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .about-container {
+        width: 75%;
+    }
+
+    /* #email-news {
+        width: 40vw;
+        margin: auto;
+        padding: auto;
+    }
+
+    #sign-up-btn {
+        width: 10vw;
+    } */
+    #email-news {
+        width: 90%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        /* margin-left: 5rem; */
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form>#sign-up-btn {
+        width: 25%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+        margin-top: -.5rem;
+        margin-bottom: .5rem;
+    }
+
+    #footer {
+        /* padding-bottom: 50px; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .copyright {
+        padding-bottom: 2px;
+    }
 }
